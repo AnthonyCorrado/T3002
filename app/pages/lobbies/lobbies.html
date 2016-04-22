@@ -1,0 +1,27 @@
+<!--
+  Generated template for the LobbyPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-navbar secondary *navbar>
+  <ion-title>
+    {{mode}} Lobby
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="lobbies">
+  <ion-row>
+    <ion-col width-100>
+        <button block secondary outline (click)="joinGame('kd35h')">Start Game</button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col width-100>
+        <button block secondary outline (click)="goToLobby(mode.$value)">Challenge Friend</button>
+    </ion-col>
+  </ion-row>
+</ion-content>
+

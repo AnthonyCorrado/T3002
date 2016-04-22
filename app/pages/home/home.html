@@ -1,0 +1,17 @@
+<ion-navbar dark *navbar class="home">
+  <ion-title>
+    <div class="primary-font">Game Modes</div>
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+<ion-row *ngFor="#mode of gameModes | async">
+  <ion-col width-100>
+      <button block secondary outline (click)="goToLobby(mode.$value)">{{mode.$value}}</button>
+  </ion-col>
+</ion-row>
+  <div>
+    <div>
+    </div>
+  </div>
+</ion-content>
