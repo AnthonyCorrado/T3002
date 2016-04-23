@@ -1,0 +1,10 @@
+<ion-navbar *navbar>
+  <ion-title>games</ion-title>
+</ion-navbar>
+
+<ion-content padding class="games">
+  <button block secondary outline (click)="getLastGame()">Hi, I am {{player1}}</button>
+  <button block secondary outline>Last Game: {{lastGame | json}}</button>
+  <button block secondary outline>Last Game player1: {{lastGame?.playerOne}}</button>
+  <button block secondary outline>Last Game is Open: {{lastGame?.isOpen}}</button>
+</ion-content>
